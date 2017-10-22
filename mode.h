@@ -31,7 +31,11 @@ class mode
         tail->next = temp;
         tail = temp;
       }
-      else tail = head = temp;
+      else
+	  {		  
+		  tail = temp;
+		  head = temp;
+	  }
     }
     void loop()
     {
@@ -53,7 +57,5 @@ class mode
       return current->node_name;
     }
 };
-
-mode mode;
 
 #endif
